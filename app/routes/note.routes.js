@@ -15,4 +15,7 @@ module.exports = (app) => {
 
     // Delete a Note with noteId
     app.delete('/notes/:noteId', notes.delete);
+
+    // Retrive using work list
+    app.get('/worklist', notes.findList);
 }
